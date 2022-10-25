@@ -1,0 +1,7 @@
+Wejście pod link / lub home spowoduje pokazanie się treści "Hello world".
+Wejście pod link /about spowoduje pokazanie się treści "About me".
+Wejście pod link /user/settings oraz /user/panel będzie powodować wyświetlenie informacji o potrzebie logowania. Należy tutaj wykorzystać middleware. Uwaga – nie ma potrzeby tworzenia konkretnych endpointów, w naszym przykładzie i tak nie pozwolimy na zalogowanie ;)
+Wejście pod inny link niż wcześniej wspomniane powinno spowodować pokazanie obrazka "404 not found".
+Uwaga – każda odpowiedź tekstowa ma być zwracana z pliku HTML, podobnie jak robiliśmy to w przykładzie z submodułu. Możesz wykorzystać nasz pomysł z dodawaną w middleware metodą show.
+
+Dodatkowo, gdy link jest nieprawidłowy ("404 not found"), pokazywana strona powinna zwracać obrazek z komunikatem o nieznalezionej witrynie, najlepiej wykorzystać któryś z dostępnych na tej stronie. Co ważne, obrazek ma być ładowany lokalnie.
